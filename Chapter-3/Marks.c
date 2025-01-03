@@ -26,4 +26,5 @@ int main(){
         printf("You entered invalid marks\n");
     }
     return 0;
+
 }
