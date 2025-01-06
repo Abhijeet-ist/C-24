@@ -5,7 +5,7 @@ int main(){
     int n;
     printf("Enter the number: ");
     scanf("%d",&n);
-    int i=0;
+    int i=1;
     do{
         printf("The value of I is: %d\n",i);
         i++;
