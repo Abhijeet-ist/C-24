@@ -73,11 +73,3 @@ guesses the player used to arrive at the number.*/
 
 //     return 0;
 // }
-
-#include<stdio.h>
-    
-int main() {
-  int a = 248755;
-  printf("%d",((a/10)+(a%10)));
-  return 0;
-}
