@@ -1,1 +1,0 @@
- // printf("The average of these 3 numbers is: %lf",d);
