@@ -9,7 +9,28 @@
 
 #include <stdio.h>
 
-int main(){
-    
+int main() {
+    int arr[5] = {10, 20, 30, 40, 50};
+    int *ptr1 = arr;
+    int *ptr2 = &arr[3];
+
+    // Addition of a number to a pointer
+    printf("ptr1 + 2 = %p\n", (ptr1 + 2));
+
+    // Subtraction of a number from a pointer
+    printf("ptr2 - 2 = %p\n", (ptr2 - 2));
+
+    // Subtraction of one pointer from another
+    printf("ptr2 - ptr1 = %ld\n", (ptr2 - ptr1));
+
+    // Comparison of two pointer variables
+    if (ptr1 < ptr2) {
+        printf("ptr1 is less than ptr2\n");
+    } else if (ptr1 > ptr2) {
+        printf("ptr1 is greater than ptr2\n");
+    } else {
+        printf("ptr1 is equal to ptr2\n");
+    }
+
     return 0;
 }
