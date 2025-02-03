@@ -7,12 +7,3 @@
 // program. Demonstrate all the four operations.
 
 
-#include <stdio.h>
-
-int main(){
-    int i=23,x;
-    int *j=&i;
-    printf("The address of 23 is : %u\n", j);
-    printf("%d", j++);
-    return 0;
-}
