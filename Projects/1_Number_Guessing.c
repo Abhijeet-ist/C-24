@@ -6,34 +6,34 @@ number please”.
 When the user guesses the correct number, the program displays the number of
 guesses the player used to arrive at the number.*/
 
-// #include <stdio.h>
-// #include <stdlib.h>
-// #include <time.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
-// int main() {
-//     // Seed the random number generator using the current time
-//     srand(time(0)); 
+int main() {
+    // Seed the random number generator using the current time
+    srand(time(0)); 
 
-//     // Generate a random number between 1 and 100
-//     int randomNumber = (rand() % 100) + 1;
-//     int guess;
-//     // Print the random number
-//     printf("Random number between 1 and 100: %d\n", randomNumber);
-//     do{
-//       printf("Guess a number: ");  
-//       scanf("%d",&guess);
-//       if (guess<randomNumber){
-//         printf("Please guess a higher number\n");
-//       } else if (guess == randomNumber+1 || guess == randomNumber-1) {
-//         printf("You are very close be alert\n");
-//       } else if (guess > randomNumber) {
-//         printf("Please guess a lower number\n");
-//       }
+    // Generate a random number between 1 and 100
+    int randomNumber = (rand() % 100) + 1;
+    int guess;
+    // Print the random number
+    printf("Random number between 1 and 100: %d\n", randomNumber);
+    do{
+      printf("Guess a number: ");  
+      scanf("%d",&guess);
+      if (guess<randomNumber){
+        printf("Please guess a higher number\n");
+      } else if (guess == randomNumber+1 || guess == randomNumber-1) {
+        printf("You are very close be alert\n");
+      } else if (guess > randomNumber) {
+        printf("Please guess a lower number\n");
+      }
 
-//     } while(guess!=randomNumber);
-//     printf("Congratulations! You guessed the correct number.\n");
-//     return 0;
-// }
+    } while(guess!=randomNumber);
+    printf("Congratulations! You guessed the correct number.\n");
+    return 0;
+}
 
 // #include <stdio.h>
 // #include <stdlib.h>
