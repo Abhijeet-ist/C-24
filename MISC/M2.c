@@ -1,6 +1,7 @@
 // Create a function to convert a string to uppercase or lowercase without using library functions.
 
 #include <stdio.h>
+#include <string.h>
 
 void toUpper(char *str){
     int i = 0;
@@ -22,9 +23,6 @@ void toLower(char *str){
     }
 }
 
-
-
-
 int main(){
     char str[100];
     printf("Enter a string: ");
@@ -33,6 +31,8 @@ int main(){
     toUpper(str);
     printf("Upper string: %s\n", str);
     toLower(str);
-    printf("Lower string: %s", str);
+    printf("Lower string: %s\n", str);
+    
     return 0;
+
 }
