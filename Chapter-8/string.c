@@ -5,7 +5,9 @@
 int main(){
     char s[]= {'A','b','h','i','j','e','e','t','\0'};
     for (int i=0; i<=7; i++){
-        printf("%c", s[i]);
+        printf("%c\n", s[i]);
     }
+    char st[]="Abhijeet";
+    printf("%s", st);
     return 0;
 }
