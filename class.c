@@ -1,59 +1,49 @@
+// #include <stdio.h>
+
+// int main(){
+//     double area=0.0, radius;
+//     double *parea=&area, *pradius=&radius;
+//     printf("Enter the radious of the circle: ");
+//     scanf("%lf", pradius);
+//     *parea=3.14 * (*pradius) * (*pradius);
+//     printf("Area of the circle is : %.2lf", *parea );
+//     return 0;
+// }
+
+
+//FACTORIAL OF NUMBER ;
+
+// #include <stdio.h>
+
+// int main(){
+//     int n, i, fact=1;
+//     int *pn = &n, *pfact=&fact;
+//     printf("Enter a number: ");
+//     scanf("%d", pn);
+//     for (i=1; i<= *pn; i++){
+//         *pfact = *pfact * i;
+//     }
+//     printf("THE FACTORIAL OF %d is : %d", *pn, *pfact);
+
+//     return 0;
+// }
+
+
+//REVERSE OF A NUMBER ;
+
 #include <stdio.h>
-#include <stdlib.h>
 
-int main() {
-    int *ptr, n, i, new_n;
-    
-  
-    printf("Enter the initial size of array: ");
-    scanf("%d", &n);
-    
-    ptr = (int*)malloc(n * sizeof(int));
-    
-    if (ptr == NULL) {
-        printf("Memory allocation failed\n");
-        return 1;
+int main(){
+    int n, remainder, reversed_number, s;
+    int *pn=&n, *pr=&remainder, *prn=&reversed_number;
+    printf("Enter an integer: ");
+    scanf("%d", pn);
+    while(*pn != 0)
+    {
+        *pr = *pn%10;
+        *prn = *prn*10 + *pr;
+        *pn = *pn/10;
     }
-    
-    
-    printf("Enter %d integers:\n", n);
-    for (i = 0; i < n; i++) {
-        scanf("%d", ptr + i);
-    }
-    
-    
-    printf("The array elements are:\n");
-    for (i = 0; i < n; i++) {
-        printf("%d ", *(ptr + i));
-    }
-    printf("\n");
-    
-   
-    printf("Enter the new size of array: ");
-    scanf("%d", &new_n);
-    
-    ptr = (int*)realloc(ptr, new_n * sizeof(int));
-    
-    if (ptr == NULL) {
-        printf("Memory reallocation failed\n");
-        return 1;
-    }
-    
-
-    if (new_n > n) {
-        printf("Enter %d more integers:\n", new_n - n);
-        for (i = n; i < new_n; i++) {
-            scanf("%d", ptr + i);
-        }
-    }
-
-    printf("The array elements after reallocation are:\n");
-    for (i = 0; i < new_n; i++) {
-        printf("%d ", *(ptr + i));
-    }
-    printf("\n");
-
-    free(ptr);
-    
+    printf("Reversed Number = %d",*prn);
     return 0;
 }
