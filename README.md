@@ -6,4 +6,6 @@ From very basics to advanced level. This is the only repo which helped me reach 
 - Proficiency in memory management and pointers.
 - Experience with file handling and I/O operations.
 - Familiarity with debugging techniques and tools.
-- Exposure to various C libraries and their applications.   
+- Exposure to various C libraries and their applications.  
+--- IGNORE ---
+# C Programming --- IGNORE --- 
