@@ -3,8 +3,7 @@ From very basics to advanced level. This is the only repo which helped me reach 
 ## Lessons Learned
 - Understanding of C syntax and semantics.
 - Mastery of data structures and algorithms.
-- Proficiency in memory management and pointers.
-- Experience with file handling and I/O operations.
+
 
 
 
