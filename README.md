@@ -10,4 +10,4 @@ From very basics to advanced level. This is the only repo which helped me reach 
 - Development of problem-solving skills through coding challenges.
 ## Key Topics Covered
 - Basic syntax and structure of C programs.
-- Control structures (if, switch, loops).
+
