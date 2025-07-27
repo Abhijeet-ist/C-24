@@ -9,5 +9,5 @@ From very basics to advanced level. This is the only repo which helped me reach 
 - Exposure to various C libraries and their applications.  
 - Development of problem-solving skills through coding challenges.
 ## Key Topics Covered
-- Basic syntax and structure of C programs.
+
 
