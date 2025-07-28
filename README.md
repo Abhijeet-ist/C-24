@@ -6,4 +6,3 @@
 - Experience with debugging and testing C programs.
 - Knowledge of file handling in C.
 - Understanding of the compilation process and how to use makefiles.
-- Exposure to advanced topics like multithreading and network programming in C.
