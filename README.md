@@ -3,4 +3,3 @@
 - Proficiency in using pointers and memory management.
 - Familiarity with data structures like arrays, linked lists, and trees.
 - Ability to write modular and maintainable code.
-- Experience with debugging and testing C programs
